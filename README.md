@@ -1,3 +1,34 @@
+## Como executar o projeto
+
+:book: Para acessar baixar a collection JSON do Insomnia [clique aqui](https://extensionlazuli.herokuapp.com/).
+
+<br>
+
+### Pré-requisitos
+
+- [Rodando API](#api)
+- [Passos criar/editar API](#register)
+
+<br>
+
+<a id="api"></a>
+
+#### 🧭 Rodando a aplicação
+
+```bash
+
+# Clone este repositório
+$ git clone https://github.com/savio-2-lopes/laravel_api.git
+
+# Habilite o Apache e SQL
+# Crie uma tabela denominada "usuarios"
+
+```
+
+<a id="register"></a>
+
+#### 🧭 Passos criar/editar API
+
 ```bash
 
 # Criar projeto com nome api
@@ -12,7 +43,7 @@ cd api
 # adicione a tabela no arquivo .env e no item denominado DB_DATABASE=NOME_DO_BANCO
 # Criar Migration e definir campos da tabela
 
-$ php artisan make:migration create_usuario_table --create=usuario
+$ php artisan make:migration create_usuarios_table --create=usuarios
 
 # Acesse a pasta /database/migrations/(MAIS_ATUAL)
 # Em Schema::create, adicione as tabelas atualize para a seguinte forma:

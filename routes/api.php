@@ -2,23 +2,28 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\UsuariosController;
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// Listar usuarios
-Route::get('usuarios', [UsuarioController::class, 'index']);
+// Listar usuários
 
-// Listar especifico usuarios
-Route::get('usuarios/{id}', [UsuarioController::class, 'show']);
+Route::get('usuarios', [UsuariosController::class, 'index']);
 
-// Criar novo artigo
-Route::post('usuarios', [UsuarioController::class, 'store']);
+// Listar usuários especificos
 
-// Atualizar usuarios
-Route::put('usuarios/{id}', [UsuarioController::class, 'update']);
+Route::get('usuarios/{id}', [UsuariosController::class, 'show']);
 
-// Delete usuarios
-Route::delete('usuarios/{id}', [UsuarioController::class,'destroy']);
+// Criar novo usuário
+
+Route::post('usuarios', [UsuariosController::class, 'store']);
+
+// Atualizar usuários
+
+Route::put('usuarios/{id}', [UsuariosController::class, 'update']);
+
+// Deletar usuários
+
+Route::delete('usuarios/{id}', [UsuariosController::class, 'destroy']);

@@ -25,9 +25,11 @@ $ git clone https://github.com/savio-2-lopes/laravel_api.git
 
 ```
 
+<br>
+
 <a id="register"></a>
 
-#### 🧭 Passos criar/editar API
+#### :computer: Passos criar/editar API
 
 ```bash
 

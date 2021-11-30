@@ -1,6 +1,6 @@
 ## Como executar o projeto
 
-:book: Para acessar baixar a collection JSON do Insomnia [clique aqui](https://extensionlazuli.herokuapp.com/).
+:book: Para acessar baixar a collection JSON do Insomnia [clique aqui](https://github.com/savio-2-lopes/laravel_api/blob/main/Insomnia_JSON).
 
 <br>
 
